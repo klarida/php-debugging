@@ -24,7 +24,7 @@ echo $monday;
 
 new_exercise(3);
 // === Exercise 3 ===
-// This should echo ` "Debugged !" `, fix it so that that is the literal text 'echo'ed'
+// This should echo ` "Debugged !" `, fix it so that that is the literal text 'echoed'
 
 $str = '“Debugged !"Also very fun”';
 echo substr($str, 0, 14);
@@ -32,13 +32,25 @@ echo substr($str, 0, 14);
 new_exercise(4);
 // === Exercise 4 ===
 // Sometimes debugging code is just like looking up code and syntax...
-// The print_r($week) should give:  Array ( [0] => mon [1] => tues [2] => wednes [3] => thurs [4] => fri [5] => satur [6] => sun )
-// Look up whats going wrong with this code, and then fix it, with ONE CHARACTER!
+// The print_r($week) should give:  Array ( [0] => mon [1] => tues [2] => wednesday[3] => thurs [4] => fri [5] => satyr [6] => sun )
+// Look up what's going wrong with this code, and then fix it, with ONE CHARACTER!
 
 foreach($week as $day) {
     $day = substr($day, 0, strlen($day)-3);
 }
 
 print_r($week[0]);
+
+new_exercise(5);
+// === Exercise 5 ===
+// The array should be printing every letter of the alphabet (a-z) but instead it does that + aa-yz
+// Fix the code so the for loop only pushes a-z in the array
+
+$arr = [];
+for ($letter = 'a'; $letter != 'aa'; $letter++) {
+    $arr[] = $letter;
+}
+
+print_r($arr); // Array ([0] => a, [1] => b, [2] => c, ...) a-z alphabetical array
 
 
