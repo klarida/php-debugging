@@ -92,8 +92,8 @@ function randomHeroName(): string
 echo "Here is the name: " . combineNames();
 
 new_exercise(7);
-function copyright(int $year): string
-{
+function copyright( $year) {
+
     return "&copy; $year BeCode";
 }
 //print the copyright
