@@ -131,7 +131,7 @@ function isLinkValid(string $link) {
 //invalid link
  echo isLinkValid('http://www.google.com/hack.pdf');
 //invalid link
- echo isLinkValid('https://google.com');
+ echo isLinkValid(' https://google.com');
 //VALID link
 echo isLinkValid('http://google.com');
 //VALID link
