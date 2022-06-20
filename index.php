@@ -35,11 +35,19 @@ new_exercise(4);
 // The print_r($week) should give:  Array ( [0] => mon [1] => tues [2] => wednesday[3] => thurs [4] => fri [5] => satyr [6] => sun )
 // Look up what's going wrong with this code, and then fix it, with ONE CHARACTER!
 
+<<<<<<< HEAD
 foreach($week as &$day) {
     $day = substr($day, 0, strlen($day)-3);
 }
 
 print_r($week);
+=======
+foreach($week as $day) {
+    $day = substr($day, 0, strlen($day)-3);
+}
+
+print_r($week[0]);
+>>>>>>> e9ca8dd51e19f76b65253254ed4c229f773bba4e
 
 new_exercise(5);
 // === Exercise 5 ===
@@ -97,14 +105,23 @@ function copyright( $year) {
     return "&copy; $year BeCode";
 }
 //print the copyright
+<<<<<<< HEAD
  echo copyright((int)date('Y'));
+=======
+copyright((int)date('Y'));
+>>>>>>> e9ca8dd51e19f76b65253254ed4c229f773bba4e
 
 
 new_exercise(8);
 function login(string $email, string $password)
 {
+<<<<<<< HEAD
     if ($email == 'john@example.be'&& $password == 'pocahontas') {
         return  'Welcome John Smith';
+=======
+    if ($email == 'john@example.be' || $password == 'pocahontas') {
+        return 'Welcome John';
+>>>>>>> e9ca8dd51e19f76b65253254ed4c229f773bba4e
     }
     return 'No access';
 }
@@ -129,13 +146,20 @@ function isLinkValid(string $link) {
     return 'Acceptable<br />';
 }
 //invalid link
+<<<<<<< HEAD
 echo isLinkValid('http://www.google.com/hack.pdf');
 //invalid link
 echo isLinkValid(' https://google.com');
+=======
+ echo isLinkValid('http://www.google.com/hack.pdf');
+//invalid link
+ echo isLinkValid(' https://google.com');
+>>>>>>> e9ca8dd51e19f76b65253254ed4c229f773bba4e
 //VALID link
 echo isLinkValid('http://google.com');
 //VALID link
 echo isLinkValid('http://google.com/test.txt');
+<<<<<<< HEAD
 
 new_exercise(10);
 
@@ -161,3 +185,5 @@ foreach($areTheseFruits as &$items){
 var_dump($areTheseFruits);//do not change this
 
 
+=======
+>>>>>>> e9ca8dd51e19f76b65253254ed4c229f773bba4e
